@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+        <!-- JQuery -->
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+        <!-- bootstrap same as before -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <style>
+            .title {
+                background-color: lightgrey;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                padding-left: 30px;
+                margin-bottom: 50px;
+                font-size: 40px;
+            }
+
+            .clients {
+                display: inline-block;
+            }
+
+            .row {
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+
+            input {
+                resize: none;
+            }
+
+            .btn-padding {
+                padding-left: 80px;
+            }
+
+        </style>
+        <script src="./log_sales.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <p>Columbia Paper Infinity</p>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <p>Log your paper sales: </p>
+        </div>
+        <div class="col-md-4">
+          <input id="clients" type="text" placeholder="Client" name="" value="">
+          <div id="cwarning"></div>
+        </div>
+        <div class="col-md-2">
+          <input id="reams" type="text" placeholder="# reams" name="" value="">
+          <div id="rwarning"></div>
+        </div>
+        <div class="col-md-1 btn-padding">
+          <button id="submit" type="button" name="button">Submit</button>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12" id="list"></div>
+      </div>
+    </div>
+  </body>
+</html>
