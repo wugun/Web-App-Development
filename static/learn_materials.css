@@ -1,0 +1,14 @@
+.img-size {
+  width: 100px;
+  height: 100px;
+}
+
+.item-style {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.large-top-margin {
+  margin-top: 80px;
+}
+

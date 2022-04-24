@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="data:,">
+        
+        <!-- jquery -->
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>  
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        
+        
+       <!--  <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}"> -->
+        
+        
+        <title>Let's Make Drinks!</title>
+
+    </head>
+
+    <body class="base">
+        <nav class="navbar topnav darkgrey">
+            <a href="/">Let's Make Drinks</a>
+            <a href="/learn/0/materials/1">Margarita</a>
+            <a href="/learn/1/materials/1">Cosmopolitan</a>
+            <a href="/learn/2/materials/1">Piña Colada</a>
+            <a href="/quiz/1/0">Quiz</a>
+        </nav>
+        <div class="container">   
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+
+</html>

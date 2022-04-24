@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script>
+    let data = {{data|tojson}}
+    let user_data = {{user_data|tojson}}
+    console.log(data)
+    console.log(user_data)
+</script>
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'home.js') }}"></script>
+
+<div class="header text-center">Welcome to Let's Make Drinks!</div>
+<div class="subheader text-center">
+    Learn and quiz yourself on how to make 3 classic cocktails:  
+</div>
+<div id='cocktails' class='text-center'></div>
+<div class='text-center'>
+    <button id='startbutton'>Click to get started!</button>
+</div>
+
+{% endblock %}

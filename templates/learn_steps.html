@@ -1,0 +1,50 @@
+   
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script>
+    let step = {{step|tojson}} 
+    console.log(step)
+    let page = {{page|tojson}} 
+    console.log(page)
+    let materials = {{materials|tojson}} 
+    console.log(materials)
+    let tools = {{tools|tojson}} 
+    console.log(tools)
+    let id = {{id|tojson}} 
+</script>
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'learn_steps.js') }}"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename = 'learn_steps.css') }}">
+
+<div class='container'>
+    <div class='row padded'>
+        <div class='col-md-6'>
+            <div id='instruction'></div>
+            <div class='row padded'>
+              <div class='col-md-6 item-style'>
+                   <p>Ingredients needed: </p>
+                   <div id='ing_images'></div>
+              </div>
+              <div class='col-md-6 item-style'>
+                    <p>Tools needed: </p>
+                    <div id='tool_images'></div>
+              </div>
+            </div>
+        </div>
+
+
+        <div class='col-md-6'>
+             <div id='visuals'></div>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='col-md-3' id='backbutton'> </div>
+        <div class='col-md-6'> </div>
+        <div class='col-md-3' id='nextbutton'> </div>
+    </div>
+
+</div>
+
+{% endblock %}
